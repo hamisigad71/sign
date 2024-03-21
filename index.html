@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en"><head>
+        
+        <meta charset="utf-8">
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" ">
+        <meta name="keywords" content="">
+        <meta content="Pichforest" name="author">
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!-- intlTelInput Css -->
+        <link rel="stylesheet" href="css/intlTelInput.min.css">
+
+        <!-- Bootstrap Css -->
+        <link href="css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+
+        <!-- Icons Css -->
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css">
+
+        <!-- App Css-->
+        <link href="css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div>
+            
+            <div class="main-content">
+
+                <div class="page-content">
+
+                    <!-- START AUTH -->
+                    <div class="bg-auth bg-dark overflow-hidden">
+                        <div class="bg-overlay" style="background: url('images/bg-auth.png');background-size: cover;opacity: 0.2;"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="text-center mb-4 pb-1">
+                                        <h4 class="text-white">Cryptorex</h4> 
+                                    </div>
+
+                                    <div class="card auth-form text-white">
+                                        <div class="card-body p-4">
+                                            <div class="text-center mb-4">
+                                                <h4 class="mb-1">Create Cryptorex Account</h4>
+                                                <p class="text-white-50">Register with your email or mobile</p>
+                                            </div>
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Email</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Mobile</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                    <form action="index.html">
+                                                        <div class="mb-3">
+                                                            <label for="enailInput" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="enailInput" placeholder="Enter your email" required="">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="passwordInput2" class="form-label">Password</label>
+                                                            <input type="password" class="form-control" id="passwordInput2" placeholder="Enter your password" required="">
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <a class="text-white form-label d-inline-block" data-bs-toggle="collapse" href="#referraleCode" role="button" aria-expanded="false" aria-controls="referraleCode">
+                                                                Referral ID (Optional) <i class="uil uil-angle-down"></i>
+                                                            </a>
+                                                            <div class="collapse" id="referraleCode">
+                                                                <input type="text" class="form-control" id="referraleCode2" placeholder="Enter referrale code">
+                                                            </div>
+                                                        </div>  
+                                                        <div class="mb-4">
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="conditionCheck" required="">
+                                                                <label class="form-check-label text-white-50 fs-15" for="conditionCheck">I have read and agree to <a href="javascript:void(0)" class="text-white">Terms of Service</a></label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                            <a href="/dashboard/index.html" class="btn btn-primary btn-sm">
+                                                                <button  class="btn btn-primary btn-hover w-100">Sign Up <i class="uil uil-lock-alt"></i></button>
+                                                                 </a>
+                                                    
+                                                    </form>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                    <form action="index.html">
+                                                        <div class="mb-3 text-black">
+                                                            <label for="enailInput" class="form-label">Mobile</label>
+                                                            <input id="phone" name="phone" class="form-control d-block" type="tel" required="">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="passwordInput" class="form-label">Password</label>
+                                                            <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password" required="">
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <a class="text-white form-label d-inline-block" data-bs-toggle="collapse" href="#codeInput" role="button" aria-expanded="false" aria-controls="codeInput">
+                                                                Referral ID (Optional) <i class="uil uil-angle-down"></i>
+                                                            </a>
+                                                            <div class="collapse" id="codeInput">
+                                                                <input type="text" class="form-control" id="referraleInput" placeholder="Enter referrale code">
+                                                            </div>
+                                                        </div>  
+                                                        <div class="mb-4">
+                                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
+                                                                <label class="form-check-label text-white-50 fs-15" for="flexCheckDefault">I have read and agree to <a href="javascript:void(0)" class="text-white">Terms of Service</a></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center">
+                                                          
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mt-4 text-center">
+                                                <p class="text-white-50 mb-0">Don't have an account ? <a href="sign-in.html" class="fw-medium text-success text-decoration-underline"> Sign In </a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div>
+                    <!-- END AUTH -->
+
+                </div>
+                <!-- End Page-content -->
+
+                
+                <!--start page Loader -->
+                <div id="preloader">
+                    <div id="status">
+                        <div id="bitcoin">
+                            
+                        </div>    
+                    </div>
+                </div>
+                <!--end page Loader -->
+
+                <!-- Style switcher -->
+                <div id="style-switcher" onclick="toggleSwitcher()" style="left: -165px;">
+                    <div>
+                        <h6>Select your color</h6>
+                        <ul class="pattern list-unstyled mb-0">
+                            <li>
+                                <a class="color-list color1" href="javascript: void(0);" onclick="setColorGreen()"></a>
+                            </li>
+                            <li>
+                                <a class="color-list color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                            </li>
+                            <li>
+                                <a class="color-list color3" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                            </li>
+                        </ul>
+                        <div class="mt-3">
+                            <h6>Layout Mode</h6>
+                            <div class="text-center mt-3">
+                                <!-- light-dark mode -->
+                                <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-3">
+                                    <i class="uil uil-brightness mode-dark mx-auto"></i>
+                                    <i class="uil uil-moon mode-light"></i>
+                                </a>
+                                <!-- END light-dark Mode -->
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- end switcher-->
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+       
+
+        <!-- intlTelInput Js -->
+        <script src="js/intlTelInput.min.js"></script>
+
+         <!-- Switcher Js -->
+        <script src="js/switcher.init.js"></script>
+
+        <script>
+             var input = document.querySelector("#phone");
+                window.intlTelInput(input, {
+                // allowDropdown: false,
+                // autoHideDialCode: false,
+                // autoPlaceholder: "off",
+                // dropdownContainer: document.body,
+                // excludeCountries: ["us"],
+                // formatOnDisplay: false,
+                // geoIpLookup: function(callback) {
+                //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                //     var countryCode = (resp && resp.country) ? resp.country : "";
+                //     callback(countryCode);
+                //   });
+                // },
+                // hiddenInput: "full_number",
+                // initialCountry: "auto",
+                // localizedCountries: { 'de': 'Deutschland' },
+                // nationalMode: false,
+                // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                // placeholderNumberType: "MOBILE",
+                // preferredCountries: ['cn', 'jp'],
+                // separateDialCode: true,
+                utilsScript: "assets/libs/intl-tel-input/build/js/utils.js",
+            });
+        </script>
+
+    
+</body></html>
